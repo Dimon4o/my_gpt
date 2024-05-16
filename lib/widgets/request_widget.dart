@@ -17,7 +17,6 @@ class RequestWidget extends StatelessWidget {
               : context.deviceSize.width * 0.46,
         ),
         width: context.deviceSize.width * 0.6,
-        //height: 100,
         decoration: ShapeDecoration(
           color: AppColors.myMessage,
           shape: const RoundedRectangleBorder(

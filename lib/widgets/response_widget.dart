@@ -16,7 +16,6 @@ class ResponseWidget extends StatelessWidget {
       child: Container(
         margin: EdgeInsets.only(right: context.deviceSize.width * 0.16),
         width: context.deviceSize.width * 0.6,
-        // height: 100,
         decoration: ShapeDecoration(
           color: AppColors.gptMessage,
           shape: const RoundedRectangleBorder(

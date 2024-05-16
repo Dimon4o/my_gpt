@@ -3,7 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:my_gpt/data/data.dart';
 import 'package:my_gpt/utils/utils.dart';
-import 'package:my_gpt/widgets/loading_widget.dart';
 
 import 'widgets/widgets.dart';
 
@@ -22,7 +21,6 @@ class HomeScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final messages = ref.watch(messagesProvider).messages.reversed.toList();
-    //final widgets = ref.watch(widgetsProvider).widgets.reversed.toList();
     return Scaffold(
       body: SafeArea(
         child: Center(
@@ -48,7 +46,6 @@ class HomeScreen extends ConsumerWidget {
                         ),
                         ListView.builder(
                           itemCount: messages.length,
-                          //padding: const EdgeInsets.only(bottom: 12),
                           physics: const BouncingScrollPhysics(),
                           reverse: true,
                           itemBuilder: (BuildContext context, int index) =>
