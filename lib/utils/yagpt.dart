@@ -39,8 +39,6 @@ void sendPrompt(String input, WidgetRef ref) async {
       .toList()[0]['message']['text']
       .toString();
 
-  //debugPrint(resultText);
-
   ref.read(messagesProvider.notifier).addMessage(
         resultText ?? 'Ваш запрос не был обработан системой',
         MessageStatus.responce,

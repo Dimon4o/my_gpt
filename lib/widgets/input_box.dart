@@ -23,7 +23,6 @@ class InputBox extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return Container(
       width: context.deviceSize.width * 0.95,
-      //height: 80,
       decoration: ShapeDecoration(
         color: const Color(0xFFE7E3D7),
         shape: RoundedRectangleBorder(
