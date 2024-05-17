@@ -1,7 +1,7 @@
 import 'data.dart';
 
-const String apiKey = 'AQVN1085MlWgbv3eDYPP7Sz-T10eWvugQoxB3_y9';
-const String catalog = 'b1gurgp55vd0p00anfpc';
+const String apiKey = '';
+const String catalog = '';
 
 List<Message> sampleMessages = [
   Message(
